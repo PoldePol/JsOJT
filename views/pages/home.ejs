@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
   <%- include("../partials/header") %>
+  <style>
+    /* Add the gradient to the body */
+    body {
+      background-image: linear-gradient(to bottom, #add8e6, #90ee90); /* Light blue to light green */
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Ensure full viewport height */
+      margin: 0; /* Remove default margin */
+    }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <div class="container mx-auto p-5">
-    <h1 class="text-3xl font-bold text-center mb-5">Pokédex</h1>
+    <h1 class="text-3xl font-bold text-center mb-5"></h1>
 
     <!-- 🔍 Search Form -->
     <form action="/search" method="GET" class="flex justify-center mb-5">
